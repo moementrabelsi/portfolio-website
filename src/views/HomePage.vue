@@ -30,9 +30,9 @@
             </div>
             <div class="about-col-2">
                 <h1 class="subtitle">About Me</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Quasi, maxime debitis incidunt unde illo voluptatum exercitationem ullam esse, 
-                    iusto libero quis totam perferendis, ducimus nulla dolores alias.</p>
+                <p>I'm a young software architecture candidate with a passion for
+                 computer science, eager to learn new skills and thirsty for knowledge. I'm a person with a
+                great communication skills always looking for new experiences and new challenges.</p>
                     <div class="tabtitle">
                         <p class="tab-links active-link" @click="opentab('skills')">Skills</p>
                         <p class="tab-links" @click="opentab('experience')">Experience</p>
@@ -63,6 +63,38 @@
         </div>
     </div>
 </div>
+
+<!-- ----------------services---------------- -->
+
+<div class="services">
+    <div class="container">
+        <h1 class="subtitle">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, alias soluta accusamus nobis, culpa suscipit illo quia, sed cumque dolore pariatur 
+                    aspernatur quibusdam maiores libero ex. Sit corporis hic aliquid?</p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, alias soluta accusamus nobis, culpa suscipit illo quia, sed cumque dolore pariatur 
+                    aspernatur quibusdam maiores libero ex. Sit corporis hic aliquid?</p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, alias soluta accusamus nobis, culpa suscipit illo quia, sed cumque dolore pariatur 
+                    aspernatur quibusdam maiores libero ex. Sit corporis hic aliquid?</p>
+                    <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
 </template>
 
