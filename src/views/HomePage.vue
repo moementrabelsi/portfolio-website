@@ -137,12 +137,47 @@ organization of tournaments and events.                    </p>
     </div>
 </div>
 
+<!-- ---------------contact------------------ -->
+<div class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>Contact@example.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>55238213</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="../assets/mycv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="YourMessage"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; {{ currentYear }} Abdelmoemen Trabelsi. <i class="fa-solid fa-heart"></i> All rights reserved.</p>
+    </div>
+</div>
 </body>
 </template>
 
 <script>
 export default {
   name: "HomePage",
+  data() {
+    return {
+      currentYear: new Date().getFullYear(),
+    };
+  },
   methods: {
 opentab(tabname){
 
