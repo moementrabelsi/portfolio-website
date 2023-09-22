@@ -95,6 +95,48 @@
     </div>
 </div>
 
+<!-- ----------------portfolio------------------- -->
+
+<div class="portfolio">
+    <div class="container">
+        <h1 class="subtitle">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="../assets/images/work-1.png">
+                <div class="layer">
+                    <h3>Medical Office App</h3>
+                    <p>
+                        Design and development of a medical office management application.  
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="../assets/images/work-2.png">
+                <div class="layer">
+                    <h3>Gaming E-Commerce Web Site</h3>
+                    <p>
+                        Development of an E - commerce website dedicated to gaming products and the
+organization of tournaments and events.                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="../assets/images/work-3.png">
+                <div class="layer">
+                    <h3>Agriculture E-Commerce Web Site</h3>
+                    <p>
+                        Development of an E-commerce website for the sale of agricultural products.
+
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
 </body>
 </template>
 
