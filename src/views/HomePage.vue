@@ -4,18 +4,19 @@
 <div class="container">
 <nav>
     <img src="../assets/images/logo.png" class="logo">
-    <ul>
+    <ul id="sidemenu">
       <li><router-link to="/" exact class="nav-link active">Home</router-link></li>
       <li><router-link to="/about" class="nav-link">About</router-link></li>
       <li><router-link to="/services" class="nav-link">Services</router-link></li>
       <li><router-link to="/portfolio" class="nav-link">Portfolio</router-link></li>
       <li><router-link to="/contact" class="nav-link">Contact</router-link></li>
+      <i class="fa-solid fa-xmark" @click="closemenu()"></i>
     </ul>
+    <i class="fa-solid fa-bars" @click="openmenu()"></i>
 </nav>
 <div class="home-text">
     <h3>Fullstack Web Developer</h3>
     <h1>Hi, I'm <span>Moemen</span><br>A Software Architecture</h1>
-    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Perferendis provident corrupti nihil aliquid possimus, <br>culpa atque rerum inventore consequuntur. <br>Repellat tempore mollitia iure quam, quisquam <br>animi magni iusto vero perspiciatis.</P>
 </div>
 
 
@@ -192,9 +193,20 @@ opentab(tabname){
     }
     event.currentTarget.classList.add("active-link");
     document.getElementById(tabname).classList.add("active-tab");
+},
+openmenu(){
+    const sidemeu= document.getElementById("sidemenu");
+    sidemeu.style.right = "0";
+},
+closemenu(){
+    const sidemeu= document.getElementById("sidemenu");
+    sidemeu.style.right = "-200px";
 }
   }
 };
+
+
+
 
 
 </script>
