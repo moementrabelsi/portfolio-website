@@ -1,29 +1,29 @@
 <template>
     <body>
-    <div class="header">
+    <div id="header">
 <div class="container">
 <nav>
     <img src="../assets/images/logo.png" class="logo">
     <ul id="sidemenu">
-      <li><router-link to="/" exact class="nav-link active">Home</router-link></li>
-      <li><router-link to="/about" class="nav-link">About</router-link></li>
-      <li><router-link to="/services" class="nav-link">Services</router-link></li>
-      <li><router-link to="/portfolio" class="nav-link">Portfolio</router-link></li>
-      <li><router-link to="/contact" class="nav-link">Contact</router-link></li>
+      <li><a href="#header">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
       <i class="fa-solid fa-xmark" @click="closemenu()"></i>
     </ul>
     <i class="fa-solid fa-bars" @click="openmenu()"></i>
 </nav>
 <div class="home-text">
     <h3>Fullstack Web Developer</h3>
-    <h1>Hi, I'm <span>Moemen</span><br>A Software Architecture</h1>
+    <h1>Hi, I'm <span>Moemen</span><br>A Software Architecture Engineer</h1>
 </div>
 
 
 </div>
     </div>
     <!-- ----------about----------- -->
-<div class="about">
+<div id="about">
     <div class="container">
         <div class="row">
             <div class="about-col-1">
@@ -67,7 +67,7 @@
 
 <!-- ----------------services---------------- -->
 
-<div class="services">
+<div id="services">
     <div class="container">
         <h1 class="subtitle">My Services</h1>
         <div class="services-list">
@@ -98,7 +98,7 @@
 
 <!-- ----------------portfolio------------------- -->
 
-<div class="portfolio">
+<div id="portfolio">
     <div class="container">
         <h1 class="subtitle">My Work</h1>
         <div class="work-list">
@@ -139,7 +139,7 @@ organization of tournaments and events.                    </p>
 </div>
 
 <!-- ---------------contact------------------ -->
-<div class="contact">
+<div id="contact">
     <div class="container">
         <div class="row">
             <div class="contact-left">

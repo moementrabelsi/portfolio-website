@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     background: #080808;
     color: #fff;
@@ -12,7 +16,7 @@ body {
 
 
 
-.header {
+#header {
     width: 100%;
     height: 100vh;
     background-image: url('../assets/images/Background.png');
@@ -48,13 +52,13 @@ nav ul li {
     margin: 10px 20px;
     position: relative;
 }
-nav ul li .nav-link {
+nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
 }
 
-nav ul li .nav-link::after {
+nav ul li a::after {
    content: '';
    width: 0;
    height: 3px;
@@ -64,7 +68,7 @@ nav ul li .nav-link::after {
    bottom: -6px;
    transition: 0.5s;
 }
-nav ul li .nav-link:hover::after{
+nav ul li a:hover::after{
     width: 100%;
 }
 
@@ -74,7 +78,7 @@ nav ul li .nav-link:hover::after{
 
 /* ------------about--------- */
 
-.about {
+#about {
     padding: 80px 0;
     color: #ababab;
 }
@@ -154,7 +158,7 @@ nav ul li .nav-link:hover::after{
 /* ----------------------services---------------------- */
 
 
-.services {
+#services {
     padding: 30px 0;
 }
 
@@ -202,7 +206,7 @@ transition: background 0.5s, transform 0.5s;
 
 /* ----------------------portfolio---------------------- */
 
-.portfolio {
+#portfolio {
     padding: 50px 0;
 }
 
@@ -377,7 +381,7 @@ nav .fa-solid {
 }
 
 @media only screen and (max-width: 600px){
-    .header{
+    #header{
         background-image: url('../assets/images/phoneback.png');
     }
 
