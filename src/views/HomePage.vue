@@ -155,7 +155,7 @@ organization of tournaments and events.                    </p>
                 <a href="../assets/mycv.pdf" download class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
-                <form action="">
+                <form>
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="Email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="YourMessage"></textarea>
@@ -170,6 +170,7 @@ organization of tournaments and events.                    </p>
 </div>
 </body>
 </template>
+
 
 <script>
 export default {
@@ -201,12 +202,22 @@ openmenu(){
 closemenu(){
     const sidemeu= document.getElementById("sidemenu");
     sidemeu.style.right = "-200px";
-}
-  }
+},
+submitToGoogleSheet() {
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbz8lF-30IBpt0KciA5srOSipvJID-Vkz-YIgOPGR-K7drL-wpPCwLi_oedlHe53IF9f/exec';
+      const form = document.forms['submit-to-google-sheet'];
+      
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message));
+    }
+  },
+  
 };
 
 
 
 
-
 </script>
+
+
